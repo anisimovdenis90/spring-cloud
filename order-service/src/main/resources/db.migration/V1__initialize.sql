@@ -12,7 +12,6 @@ CREATE TABLE `order_items` (
     `price` INTEGER NOT NULL,
     `quantity` INTEGER NOT NULL,
     PRIMARY KEY (`id`),
-    FOREIGN KEY (`product_id`) REFERENCES `products`(`id`),
     FOREIGN KEY (`order_id`) REFERENCES `orders`(`id`)
 );
 
