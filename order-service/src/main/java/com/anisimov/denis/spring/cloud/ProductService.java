@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient("product-controller")
+@FeignClient("product-service")
 public interface ProductService {
     @RequestMapping(method = RequestMethod.GET, value = "/api/v1/products")
     List<ProductDto> getProductsByIds(@RequestParam Long... productsId);
