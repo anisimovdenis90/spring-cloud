@@ -1,4 +1,4 @@
-package com.anisimov.denis.spring.cloud;
+package com.anisimov.denis.spring.cloud.exeptions;
 
 public class ResourceNotFoundException extends RuntimeException {
 

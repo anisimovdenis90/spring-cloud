@@ -1,5 +1,6 @@
-package com.anisimov.denis.spring.cloud;
+package com.anisimov.denis.spring.cloud.services;
 
+import com.anisimov.denis.spring.cloud.dto.ProductDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

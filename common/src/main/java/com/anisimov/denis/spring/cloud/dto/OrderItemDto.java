@@ -1,4 +1,4 @@
-package com.anisimov.denis.spring.cloud;
+package com.anisimov.denis.spring.cloud.dto;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

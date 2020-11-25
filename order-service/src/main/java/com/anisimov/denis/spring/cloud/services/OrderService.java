@@ -1,5 +1,11 @@
-package com.anisimov.denis.spring.cloud;
+package com.anisimov.denis.spring.cloud.services;
 
+import com.anisimov.denis.spring.cloud.dto.OrderDto;
+import com.anisimov.denis.spring.cloud.dto.OrderItemDto;
+import com.anisimov.denis.spring.cloud.dto.ProductDto;
+import com.anisimov.denis.spring.cloud.enteties.Order;
+import com.anisimov.denis.spring.cloud.enteties.OrderItem;
+import com.anisimov.denis.spring.cloud.repositories.OrderRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

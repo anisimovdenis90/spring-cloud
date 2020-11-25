@@ -1,5 +1,9 @@
-package com.anisimov.denis.spring.cloud;
+package com.anisimov.denis.spring.cloud.controllers;
 
+import com.anisimov.denis.spring.cloud.services.ProductService;
+import com.anisimov.denis.spring.cloud.dto.ProductDto;
+import com.anisimov.denis.spring.cloud.entities.Product;
+import com.anisimov.denis.spring.cloud.exeptions.ResourceNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

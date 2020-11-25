@@ -1,5 +1,9 @@
-package com.anisimov.denis.spring.cloud;
+package com.anisimov.denis.spring.cloud.services;
 
+import com.anisimov.denis.spring.cloud.repositories.ProductRepository;
+import com.anisimov.denis.spring.cloud.dto.ProductDto;
+import com.anisimov.denis.spring.cloud.entities.Product;
+import com.anisimov.denis.spring.cloud.exeptions.ResourceNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -11,9 +11,11 @@ eureka:
 spring:
   application:
     name: order-service
+  flyway:
+    locations: classpath:/db/migration
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/spring_cloud?serverTimezone=Europe/Moscow&amp&useSSL=false
+    url: jdbc:mysql://localhost:3306/order_service?serverTimezone=Europe/Moscow&amp&useSSL=false
     username: root
     password: gtr120519
   jpa:
@@ -21,10 +23,3 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
-  flyway:
-    baseline-on-migrate: true
-    locations: classpath:db.migration
-    url: jdbc:mysql://localhost:3306/spring_cloud?serverTimezone=Europe/Moscow&amp&useSSL=false
-    schemas: spring_cloud
-    user: root
-    password: gtr120519

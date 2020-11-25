@@ -1,5 +1,6 @@
-package com.anisimov.denis.spring.cloud;
+package com.anisimov.denis.spring.cloud.enteties;
 
+import com.anisimov.denis.spring.cloud.dto.ProductDto;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
