@@ -1,0 +1,25 @@
+server:
+  port: 19871
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+  fetchRegistry: true
+
+spring:
+  application:
+    name: order-service
+  flyway:
+    locations: classpath:/db/migration
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/order_service?serverTimezone=Europe/Moscow&amp&useSSL=false
+    username: root
+    password: gtr120519
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
